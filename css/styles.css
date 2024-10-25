@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.pokecard {
+    position: relative;
+    background-color: #e89106;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s, box-shadow 1s;
+}
+
+.pokecard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.nombre {
+    position: absolute;
+    top: -15px;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 0;
+    padding: 0 45px;
+    font-size: 24px;
+    border: 3px solid #0c0c0c;
+    border-radius: 10px;
+    background-color: #ea4b1b;
+}
+
+.imagen {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.info {
+    margin: 0 10px;
+    text-align: left;
+}
+
+.info p {
+    margin: 5px 0;
+}
